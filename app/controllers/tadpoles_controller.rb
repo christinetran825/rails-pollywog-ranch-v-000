@@ -4,7 +4,8 @@ class TadpolesController < ApplicationController
   # add your metamorphosize action here
 
   def metamorphosize
-
+    @frog = Frog.new
+    @tadpole = Tadpole.find(params[:id])
   end
 
   def index
