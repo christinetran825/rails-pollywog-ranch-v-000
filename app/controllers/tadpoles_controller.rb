@@ -4,7 +4,6 @@ class TadpolesController < ApplicationController
   # add your metamorphosize action here
 
   def metamorphose
-    @frog = Frog.new
     @tadpole = Tadpole.find(params[:id])
     @frog.name = @tadpole.name
     @frog.color = @tadpole.color
