@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 
   # code your post to  '/tadpoles/:id/metamorphosize' here
-  post '/tadpoles/:id/metamorphose', to: 'tadpoles#metamorphose'
+  post '/tadpoles/:id/metamorphose', to: 'tadpoles#metamorphose' as 'metamorphose'
   # it should direct to the tadpoles controller, the metamorphosize action
 
   # resources
