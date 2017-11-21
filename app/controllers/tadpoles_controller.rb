@@ -9,9 +9,12 @@ class TadpolesController < ApplicationController
     @frog.name = @tadpole.name
     @frog.color = @tadpole.color
     @frog.pond = @tadpole.pond
-    @frog.save
-    @tadpole.delete
-    redirect_to frog_path(@frog)
+    if @frog.save
+      @tadpole.destroy
+      redirect_to frog_path(@frog)
+    else
+      render :show
+    end
   end
 
   def index
