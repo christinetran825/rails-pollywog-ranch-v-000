@@ -5,7 +5,7 @@
   <!-- the form should post to /tadpoles/:id/metamorphosize -->
 
   <%= form_for @tadpole, url: {action: "metamorphose"}, method: "post" do |f| %>
-    <% f.submit "Before a frog" %>
+    <% f.submit "Become a frog" %>
   <% end %>
 
   <p>Color: <%= @tadpole.color %></p>
