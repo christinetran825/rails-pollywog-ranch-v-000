@@ -11,11 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140922151507) do
-
-  create_table "ponds", force: :cascade do |t|
-    t.string "name"
-    t.string "water_type"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
