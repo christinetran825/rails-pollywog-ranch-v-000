@@ -9,6 +9,7 @@ class TadpolesController < ApplicationController
     @frog.name = @tadpole.name
     @frog.color = @tadpole.color
     @frog.save
+    @tadpole.delete
     redirect_to frog_path(@frog)
   end
 
